@@ -6,7 +6,8 @@ __pycache__/
 *.gz
 # C extensions
 *.so
-
+.history/
+.vscode/
 # Distribution / packaging
 .Python
 build/
