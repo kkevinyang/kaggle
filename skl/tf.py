@@ -8,6 +8,7 @@ tag_list = ['青年 吃货 唱歌',
 
 vectorizer = CountVectorizer() #将文本中的词语转换为词频矩阵  
 X = vectorizer.fit_transform(tag_list) #计算个词语出现的次数
+print('X:', X)
 # pdb.set_trace()
 """
 word_dict = vectorizer.vocabulary_
@@ -16,4 +17,6 @@ word_dict = vectorizer.vocabulary_
 
 transformer = TfidfTransformer()  
 tfidf = transformer.fit_transform(X)  #将词频矩阵X统计成TF-IDF值  
+print('tfidf:', tfidf)
+
 print(tfidf.toarray())
